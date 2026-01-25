@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>60th Photos</title>
+  <link rel="stylesheet" href="/vendor/photoswipe.css" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; }
+    header { padding: 20px; text-align: center; }
+    header h1 { margin: 0 0 8px; font-size: 22px; }
+    header p { margin: 0; opacity: 0.75; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      padding: 12px;
+    }
+    .grid a {
+      display: block;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #eee;
+      aspect-ratio: 1 / 1;
+    }
+    .grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    footer { text-align: center; padding: 18px; opacity: 0.6; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy 60th! 🎉</h1>
+    <p>Swipe through the memories.</p>
+  </header>
+
+  <div class="grid" id="gallery" aria-label="Photo gallery"></div>
+
+  <footer>
+    Tip: Tap any photo to view fullscreen.
+  </footer>
+
+  <script type="module">
+    import PhotoSwipeLightbox from '/vendor/photoswipe-lightbox.esm.min.js';
+
+    async function main() {
+      const res = await fetch('/photos.json', { cache: 'no-store' });
+      const items = await res.json();
+
+      const galleryEl = document.getElementById('gallery');
+      galleryEl.innerHTML = items.map(p => `
+        <a href="${p.src}"
+           data-pswp-width="${p.w}"
+           data-pswp-height="${p.h}"
+           target="_blank" rel="noreferrer">
+          <img loading="lazy" src="${p.thumb ?? p.src}" alt="">
+        </a>
+      `).join('');
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: () => import('/vendor/photoswipe.esm.min.js')
+      });
+
+      lightbox.init();
+    }
+
+    main().catch(err => {
+      console.error(err);
+      document.getElementById('gallery').innerHTML =
+        '<p style="padding:12px">Could not load photos.</p>';
+    });
+  </script>
+</body>
+</html>
