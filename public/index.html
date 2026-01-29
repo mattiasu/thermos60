@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
   <title>60th Photos</title>
   <link rel="stylesheet" href="/vendor/photoswipe.css" />
   <style>
@@ -30,19 +31,26 @@
       object-fit: cover;
       display: block;
     }
+    .logo {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 8px;
+      opacity: 0.9;
+    }
     footer { text-align: center; padding: 18px; opacity: 0.6; font-size: 12px; }
   </style>
 </head>
 <body>
   <header>
+    <img src="/icons/thermos-logo.svg" alt="" class="logo">
     <h1>Happy 60th! 🎉</h1>
-    <p>Swipe through the memories.</p>
+    <p>Walk down memory lane.</p>
   </header>
 
   <div class="grid" id="gallery" aria-label="Photo gallery"></div>
 
   <footer>
-    Tip: Tap any photo to view fullscreen.
+    Pro Tip: Klicka för fullskärm.
   </footer>
 
   <script type="module">

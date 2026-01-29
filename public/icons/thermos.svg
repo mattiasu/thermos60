@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="128"
+  height="128"
+  viewBox="0 0 128 128"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="#000"
+  stroke-width="8"
+  stroke-linecap="round"
+  stroke-linejoin="round">
+
+  <!-- Lid -->
+  <rect x="44" y="10" width="40" height="18" rx="6"/>
+
+  <!-- Neck -->
+  <rect x="50" y="28" width="28" height="10" rx="4"/>
+
+  <!-- Body -->
+  <rect x="38" y="36" width="52" height="74" rx="20"/>
+
+  <!-- Bottom accent -->
+  <path d="M44 102 H84"/>
+
+</svg>

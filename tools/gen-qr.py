@@ -2,7 +2,7 @@
 import qrcode
 from qrcode.image.svg import SvgPathImage
 
-URL = "https://thermos60.pages.dev/"
+URL = "https://thermos.addy.se/"
 OUT = "thermos-addy-se.svg"
 
 img = qrcode.make(
