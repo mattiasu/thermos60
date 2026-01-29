@@ -1,7 +1,17 @@
 [
   {
-    "src": "/photos/img_1.jpeg",
+    "src": "/photos/IMG_001.jpeg",
+    "w": 750,
+    "h": 1334
+  },
+  {
+    "src": "/photos/IMG_002.jpeg",
     "w": 900,
     "h": 1600
+  },
+  {
+    "src": "/photos/IMG_003.jpeg",
+    "w": 2048,
+    "h": 1536
   }
 ]
