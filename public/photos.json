@@ -1,17 +1,322 @@
 [
   {
     "src": "/photos/IMG_001.jpeg",
-    "w": 750,
-    "h": 1334
+    "w": 1600,
+    "h": 1200
   },
   {
     "src": "/photos/IMG_002.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_003.jpeg",
+    "w": 1440,
+    "h": 1440
+  },
+  {
+    "src": "/photos/IMG_004.jpeg",
+    "w": 1648,
+    "h": 1236
+  },
+  {
+    "src": "/photos/IMG_005.jpeg",
+    "w": 874,
+    "h": 1599
+  },
+  {
+    "src": "/photos/IMG_006.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_007.jpeg",
+    "w": 1600,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_008.jpeg",
+    "w": 1600,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_009.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_010.jpeg",
+    "w": 1200,
+    "h": 1599
+  },
+  {
+    "src": "/photos/IMG_011.jpeg",
+    "w": 1195,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_012.jpeg",
+    "w": 1500,
+    "h": 2000
+  },
+  {
+    "src": "/photos/IMG_013.jpeg",
+    "w": 1500,
+    "h": 2000
+  },
+  {
+    "src": "/photos/IMG_014.jpeg",
+    "w": 1368,
+    "h": 1824
+  },
+  {
+    "src": "/photos/IMG_015.jpeg",
+    "w": 1536,
+    "h": 2048
+  },
+  {
+    "src": "/photos/IMG_016.jpeg",
+    "w": 1536,
+    "h": 2048
+  },
+  {
+    "src": "/photos/IMG_017.jpeg",
+    "w": 2048,
+    "h": 2048
+  },
+  {
+    "src": "/photos/IMG_018.jpeg",
+    "w": 1080,
+    "h": 1920
+  },
+  {
+    "src": "/photos/IMG_019.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_020.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_021.jpeg",
+    "w": 2048,
+    "h": 1536
+  },
+  {
+    "src": "/photos/IMG_022.jpeg",
+    "w": 1600,
+    "h": 1195
+  },
+  {
+    "src": "/photos/IMG_023.jpeg",
+    "w": 1280,
+    "h": 960
+  },
+  {
+    "src": "/photos/IMG_024.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_025.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_026.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_027.jpeg",
+    "w": 1536,
+    "h": 2048
+  },
+  {
+    "src": "/photos/IMG_028.jpeg",
+    "w": 2048,
+    "h": 1536
+  },
+  {
+    "src": "/photos/IMG_029.jpeg",
+    "w": 2000,
+    "h": 1500
+  },
+  {
+    "src": "/photos/IMG_030.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_031.jpeg",
+    "w": 1889,
+    "h": 1319
+  },
+  {
+    "src": "/photos/IMG_032.jpeg",
+    "w": 1600,
+    "h": 1071
+  },
+  {
+    "src": "/photos/IMG_033.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_034.jpeg",
+    "w": 1600,
+    "h": 1071
+  },
+  {
+    "src": "/photos/IMG_035.jpeg",
+    "w": 1600,
+    "h": 1071
+  },
+  {
+    "src": "/photos/IMG_036.jpeg",
+    "w": 1600,
+    "h": 950
+  },
+  {
+    "src": "/photos/IMG_037.jpeg",
+    "w": 1600,
+    "h": 1071
+  },
+  {
+    "src": "/photos/IMG_038.jpeg",
+    "w": 1600,
+    "h": 1071
+  },
+  {
+    "src": "/photos/IMG_039.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_040.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_041.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_042.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_043.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_044.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_045.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_046.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_047.jpeg",
+    "w": 1024,
+    "h": 683
+  },
+  {
+    "src": "/photos/IMG_048.jpeg",
+    "w": 683,
+    "h": 1024
+  },
+  {
+    "src": "/photos/IMG_049.jpeg",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/photos/IMG_050.jpeg",
+    "w": 1024,
+    "h": 683
+  },
+  {
+    "src": "/photos/IMG_051.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_052.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_053.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_054.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_055.jpeg",
+    "w": 739,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_056.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_057.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_058.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_059.jpeg",
+    "w": 2048,
+    "h": 1423
+  },
+  {
+    "src": "/photos/IMG_060.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_061.jpeg",
     "w": 900,
     "h": 1600
   },
   {
-    "src": "/photos/IMG_003.jpeg",
-    "w": 2048,
-    "h": 1536
+    "src": "/photos/IMG_062.jpeg",
+    "w": 1512,
+    "h": 2016
+  },
+  {
+    "src": "/photos/IMG_063.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_064.jpeg",
+    "w": 1200,
+    "h": 1600
   }
 ]
