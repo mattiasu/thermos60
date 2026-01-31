@@ -1,45 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
   <title>60th Photos</title>
   <link rel="stylesheet" href="/vendor/photoswipe.css" />
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; }
-    header { padding: 20px; text-align: center; }
-    header h1 { margin: 0 0 8px; font-size: 22px; }
-    header p { margin: 0; opacity: 0.75; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 8px;
-      padding: 12px;
-    }
-    .grid a {
-      display: block;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #eee;
-      aspect-ratio: 1 / 1;
-    }
-    .grid img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .logo {
-      width: 56px;
-      height: 56px;
-      margin-bottom: 8px;
-      opacity: 0.9;
-    }
-    footer { text-align: center; padding: 18px; opacity: 0.6; font-size: 12px; }
-  </style>
+  <link rel="stylesheet" href="/thermos.css" />
 </head>
+
 <body>
   <header>
     <img src="/icons/thermos-logo.svg" alt="" class="logo">
@@ -49,9 +19,37 @@
 
   <div class="grid" id="gallery" aria-label="Photo gallery"></div>
 
-  <footer>
-    Pro Tip: Klicka för fullskärm.
-  </footer>
+  <section class="videos">
+    <h2>Videos</h2>
+
+    <div class="video-grid">
+      <div class="video-card" data-video="/videos/clip1.mp4">
+        <div class="video-frame">
+          <img src="/videos/posters/clip1.png" alt="">
+          <span class="play">▶</span>
+        </div>
+      </div>
+
+      <div class="video-card" data-video="/videos/clip2.mp4">
+        <div class="video-frame">
+          <img src="/videos/posters/clip2.png" alt="">
+          <span class="play">▶</span>
+        </div>
+      </div>
+
+      <div class="video-card" data-video="/videos/clip3.mp4">
+        <div class="video-frame">
+          <img src="/videos/posters/clip3.png" alt="">
+          <span class="play">▶</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-logo">
+    <img src="/icons/footer-logo.png" alt="">
+    <div>Powered by Thermos for 60 years</div>
+  </div>
 
   <script type="module">
     import PhotoSwipeLightbox from '/vendor/photoswipe-lightbox.esm.min.js';
@@ -84,6 +82,28 @@
       document.getElementById('gallery').innerHTML =
         '<p style="padding:12px">Could not load photos.</p>';
     });
+
+    document.querySelectorAll('.video-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const src = card.dataset.video;
+        const frame = card.querySelector('.video-frame');
+
+        const video = document.createElement('video');
+        video.controls = true;
+        video.playsInline = true;
+        video.autoplay = true;
+
+        const source = document.createElement('source');
+        source.src = src;
+        source.type = 'video/mp4';
+
+        video.appendChild(source);
+
+        frame.innerHTML = '';
+        frame.appendChild(video);
+      });
+    });
   </script>
 </body>
+
 </html>

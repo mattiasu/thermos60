@@ -95,11 +95,6 @@
     "h": 1600
   },
   {
-    "src": "/photos/IMG_020.jpeg",
-    "w": 1200,
-    "h": 1600
-  },
-  {
     "src": "/photos/IMG_021.jpeg",
     "w": 2048,
     "h": 1536
@@ -318,5 +313,40 @@
     "src": "/photos/IMG_064.jpeg",
     "w": 1200,
     "h": 1600
+  },
+  {
+    "src": "/photos/IMG_065.jpeg",
+    "w": 640,
+    "h": 480
+  },
+  {
+    "src": "/photos/IMG_066.jpeg",
+    "w": 640,
+    "h": 480
+  },
+  {
+    "src": "/photos/IMG_067.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_068.jpeg",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_069.jpeg",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/photos/IMG_070.jpeg",
+    "w": 750,
+    "h": 1334
+  },
+  {
+    "src": "/photos/IMG_071.jpeg",
+    "w": 2048,
+    "h": 1536
   }
 ]
